@@ -22,11 +22,17 @@ content:
         label: Category
         type: select
         options:
-          - Wildlife Diaries
-          - Agriculture & AI
-          - The Farm
-          - Coexistence
-          - Our Days Here
+          values:
+            - name: Wildlife Diaries
+              value: Wildlife Diaries
+            - name: Agriculture & AI
+              value: Agriculture & AI
+            - name: The Farm
+              value: The Farm
+            - name: Coexistence
+              value: Coexistence
+            - name: Our Days Here
+              value: Our Days Here
       - name: cover
         label: Cover photograph
         type: image
