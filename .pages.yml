@@ -1,0 +1,38 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: journal
+    label: Estate Journal
+    type: collection
+    path: content/journal
+    format: json
+    filename: "{year}-{month}-{day}-{primary}.json"
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: select
+        options:
+          - Wildlife Diaries
+          - Agriculture & AI
+          - The Farm
+          - Coexistence
+          - Our Days Here
+      - name: cover
+        label: Cover photograph
+        type: image
+      - name: excerpt
+        label: Short introduction
+        type: text
+      - name: body
+        label: Story
+        type: rich-text
